@@ -7,7 +7,7 @@ export default function Home() {
   return <>
   <CarouselFade/>
   <HeroContent/>
-  <CardList/>
+  {/* <CardList/> */}
   
   
   </>;
