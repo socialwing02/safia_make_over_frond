@@ -1,9 +1,9 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./components/Layout";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Service from "./pages/Service";
+import Home from "./pages/Screen/Home";
+import About from "./pages/Screen/About";
+import Contact from "./pages/Screen/Contact";
+import Service from "./pages/Screen/Service";
 
 export default function Routing() {
   const router = createBrowserRouter([

@@ -1,54 +1,9 @@
-import React, { useState, useEffect } from "react";
-import safiya1 from "../assets/images/safiya1.jpeg";
-import safiya2 from "../assets/images/safiya2.jpeg";
-import safiya3 from "../assets/images/safiya3.jpeg";
-import safiya4 from "../assets/images/safiya4.jpeg";
+import { useState, useEffect } from "react";
+import { navlist, slides } from "../constant/data";
+import { NavLink } from "react-router-dom";
+import Button from "./Button";
 
 const CarouselFade = () => {
-  const slides = [
-    {
-      id: 1,
-      image: safiya1,
-      title: "1st Image",
-      description: "Voici la (taataataaaa) première image ;p",
-    },
-    {
-      id: 2,
-      image: safiya4,
-      title: "Second slide label",
-      description:
-        "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
-    },
-    {
-      id: 3,
-      image: safiya3,
-      title: "Third slide label",
-      description:
-        "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
-    },
-    {
-      id: 4,
-      image: safiya4,
-      title: "Fourth slide label",
-      description:
-        "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
-    },
-    {
-      id: 5,
-      image: safiya2,
-      title: "Fifth slide label",
-      description:
-        "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
-    },
-    {
-        id: 6,
-        image: safiya2,
-        title: "Fifth slide label",
-        description:
-          "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
-      },
-  ];
-
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
@@ -59,17 +14,45 @@ const CarouselFade = () => {
     setCurrentIndex((currentIndex - 1 + slides.length) % slides.length);
   };
 
-  // Automatically change slides every 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 3000); // 3000ms = 3 seconds
+    }, 3000);
 
-    return () => clearInterval(interval); // Cleanup interval on component unmount
+    return () => clearInterval(interval);
   }, [currentIndex]);
 
   return (
-    <div className="relative h-screen overflow-hidden">
+    <div className="relative h-[130vh] overflow-hidden">
+      {/* Header */}
+      <header className="absolute top-0 left-0 w-full text-white bg-transparent flex justify-between p-8 border-b-2 border-transparent items-center z-10">
+        <div className="text-black font-bold text-xl">logo</div>
+        <nav>
+          <ul className="flex gap-12">
+            {navlist.map((item) => (
+              <li
+                key={item.name}
+                className="relative group text-lg font-semibold"
+              >
+                <NavLink
+                  to={item.path}
+                  className={({ isActive }) =>
+                    `transition-colors duration-300 ${
+                      isActive ? "text-red-500" : "text-white"
+                    }`
+                  }
+                >
+                  {item.name}
+                </NavLink>
+                <span className="absolute left-0 bottom-0 h-[2.5px] w-0 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+              </li>
+            ))}
+          </ul>
+        </nav>
+        <Button className="bg-red-500">Contact us</Button>
+      </header>
+
+      {/* Carousel Content */}
       <div className="relative h-full">
         {slides.map((slide, index) => (
           <div
@@ -83,9 +66,9 @@ const CarouselFade = () => {
               backgroundPosition: "center",
             }}
           >
-            <div className="absolute bottom-32 w-full text-center text-black bg-opacity-50 py-4">
+            <div className="absolute top-[40%] w-full text-center text-black bg-opacity-50 py-4">
               <h3
-                className={`text-4xl font-bold  transform transition-all duration-1000 ${
+                className={`text-4xl font-bold transform transition-all duration-1000 ${
                   index === currentIndex
                     ? "translate-x-0 opacity-100"
                     : "-translate-x-full opacity-0"
@@ -107,14 +90,15 @@ const CarouselFade = () => {
         ))}
       </div>
 
+      {/* Navigation Buttons */}
       <button
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white bg-gray-800 bg-opacity-50 rounded-full p-3 hover:bg-opacity-80"
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white bg-gray-800 bg-opacity-50 rounded-full p-3 hover:bg-opacity-80 z-10"
         onClick={prevSlide}
       >
         &lt;
       </button>
       <button
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white bg-gray-800 bg-opacity-50 rounded-full p-3 hover:bg-opacity-80"
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white bg-gray-800 bg-opacity-50 rounded-full p-3 hover:bg-opacity-80 z-10"
         onClick={nextSlide}
       >
         &gt;

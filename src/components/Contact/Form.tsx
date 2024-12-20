@@ -22,13 +22,16 @@ export default function Form() {
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
-    const message = `Hello, my name is ${input.name}.
+    if (input.phone.length < 10) return;
+
+    const message = `Hello,Got a contact from your website,
+    Name:${input.name}.
    Email: ${input.email}
    Phone: ${input.phone}
     Message: ${input.desc}`;
 
     const encodedMessage = encodeURIComponent(message);
-    const whatsappURL = `https://wa.me/7708927972?text=${encodedMessage}`;
+    const whatsappURL = `https://wa.me/8668079374?text=${encodedMessage}`;
 
     window.open(whatsappURL, "_blank");
   }
@@ -67,9 +70,10 @@ export default function Form() {
             placeholder="Enter your number"
             onChange={handleInputChange}
             name="phone"
+            required
           />
-          {input.phone.length > 0 && input.phone?.length >= 10 && (
-            <p>phone should contain 10 digits</p>
+          {input.phone.length > 0 && input.phone.length < 10 && (
+            <p className="text-red-500">Should contain 10 digits</p>
           )}
 
           <div className="grid gap-2 ">
@@ -148,15 +152,15 @@ type Props = {
   required?: boolean;
 };
 
-function Input({ label, onChange, ...props }: Props) {
+function Input({ label, onChange, required = false, ...props }: Props) {
   return (
     <div className="grid ">
       <label htmlFor={label}>{label}</label>
       <input
         onChange={onChange}
+        required={required}
         {...props}
         className="border-b border-gray-400 w-[min(300px,90vw)] pl-2"
-        maxLength={10}
       />
     </div>
   );
