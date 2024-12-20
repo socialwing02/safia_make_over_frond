@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+input {
+  outline: none;
+}
+
+input:user-valid {
+  border-bottom: 2px solid green;
+}
+
+input:user-invalid {
+  border-bottom: 2px solid red;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  appearance: none;
+}

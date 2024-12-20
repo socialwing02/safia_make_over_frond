@@ -4,9 +4,11 @@ import HeroContent from "../components/HeroContent";
 import CardList from "../components/CardList";
 
 export default function Home() {
-  return <div>
-<CarouselFade/>
-<HeroContent/>
-<CardList/>
-  </div>;
+  return <>
+  <CarouselFade/>
+  <HeroContent/>
+  <CardList/>
+  
+  
+  </>;
 }

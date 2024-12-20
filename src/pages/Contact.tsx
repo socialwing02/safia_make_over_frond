@@ -1,5 +1,9 @@
-import React from "react";
+import Form from "../components/Contact/Form";
 
 export default function Contact() {
-  return <div>Contact</div>;
+  return (
+    <>
+      <Form />
+    </>
+  );
 }
