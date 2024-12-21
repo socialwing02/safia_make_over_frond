@@ -1,6 +1,6 @@
-import cardimage1 from "../assets/images/Card/1.png";
-import cardimage2 from "../assets/images/Card/2.png";
-import cardimage3 from "../assets/images/Card/3.png";
+import cardimage1 from "../assets/honey/10.png";
+import cardimage2 from "../assets/honey/13.png";
+import cardimage3 from "../assets/honey/19.png";
 
 export const navlist = [
   { name: "Home", path: "/" },
@@ -33,10 +33,12 @@ export const cardData: CardData[] = [
   },
 ];
 
-import safiya1 from "../assets/images/safiya1.jpeg";
-import safiya2 from "../assets/images/safiya2.jpeg";
-import safiya3 from "../assets/images/safiya3.jpeg";
-import safiya4 from "../assets/images/safiya4.jpeg";
+import safiya1 from "../assets/Carousel/1-min.png";
+import safiya2 from "../assets/Carousel/2-min.png";
+import safiya3 from "../assets/Carousel/3-min.png";
+import safiya4 from "../assets/Carousel/4-min.png";
+import safiya5 from "../assets/Carousel/5-min.png";
+import safiya6 from "../assets/Carousel/6-min.png";
 
 export const slides = [
   {
@@ -47,7 +49,7 @@ export const slides = [
   },
   {
     id: 2,
-    image: safiya4,
+    image: safiya2,
     title: "Bridal ",
     description: "Every bridal makeup can be found here",
   },
@@ -65,13 +67,13 @@ export const slides = [
   },
   {
     id: 5,
-    image: safiya2,
+    image: safiya5,
     title: "Bridal ",
     description: "Every bridal makeup can be found here",
   },
   {
     id: 6,
-    image: safiya2,
+    image: safiya6,
     title: "Bridal ",
     description: "Every bridal makeup can be found here",
   },

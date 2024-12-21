@@ -1,13 +1,13 @@
-import image1 from "../../assets/images/safiya1.jpeg";
-import image2 from "../../assets/images/safiya2.jpeg";
-import image3 from "../../assets/images/safiya3.jpeg";
-import image4 from "../../assets/images/safiya4.jpeg";
-import image5 from "../../assets/images/safiya1.jpeg";
-import image6 from "../../assets/images/safiya1.jpeg";
+import image1 from "../../assets/honey/10.png";
+import image2 from "../../assets/honey/13.png";
+import image3 from "../../assets/honey/14.png";
+import image4 from "../../assets/honey/19.png";
+import image5 from "../../assets/honey/image2.webp";
+import image6 from "../../assets/honey/image3.webp";
 
 export default function ImageGallery() {
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex justify-center items-center h-screen">
       <div className="gallery">
         <img src={image1} alt="" />
         <img src={image2} alt="" />
