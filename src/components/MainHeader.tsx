@@ -6,7 +6,7 @@ export default function MainHeader() {
   return (
     <>
       <header className="bg-white flex justify-between p-8 border-b-2 items-center">
-        logo
+        {/* <img src="/logo.png" alt="" /> */}
         <nav>
           <ul className="flex gap-12">
             {navlist.map((item) => (
