@@ -24,9 +24,10 @@ const CarouselFade = () => {
 
   return (
     <div className="relative h-[130vh] overflow-hidden">
-      {/* Header */}
       <header className="absolute top-0 left-0 w-full text-white bg-transparent flex justify-between p-8 border-b-2 border-transparent items-center z-10">
-        <div className="text-black font-bold text-xl">logo</div>
+        <div className="text-black font-bold text-xl">
+          {/* <img src="/logo.png" alt="" /> */}
+        </div>
         <nav>
           <ul className="flex gap-12">
             {navlist.map((item) => (

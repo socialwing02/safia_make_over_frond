@@ -78,3 +78,23 @@ export const slides = [
     description: "Every bridal makeup can be found here",
   },
 ];
+
+import image1 from "../assets/PhotoShoot/1.png";
+import image2 from "../assets/PhotoShoot/10.png";
+import image3 from "../assets/PhotoShoot/11.png";
+import image4 from "../assets/PhotoShoot/12.png";
+import image5 from "../assets/PhotoShoot/16.png";
+import image6 from "../assets/PhotoShoot/20.png";
+import image7 from "../assets/PhotoShoot/24.png";
+import image8 from "../assets/PhotoShoot/25.png";
+
+export const bridal = [
+  image1,
+  image2,
+  image3,
+  image4,
+  image5,
+  image6,
+  image7,
+  image8,
+];

@@ -12,9 +12,9 @@ export default function Footer() {
   }
 
   return (
-    <footer className="bg-black text-white flex justify-around p-10">
+    <footer className=" border-t-2 bg-gray-200 flex flex-col gap-9 sm:gap-0 sm:flex-row   justify-around p-10">
       <div>
-        <h1 className="text-2xl py-4">Quick Links</h1>
+        <h1 className="text-3xl py-4 text-center">Quick Links</h1>
         <ul className="grid place-items-center  gap-2">
           {navlist.map((item) => (
             <li className="text-xl hover:underline">
@@ -27,7 +27,7 @@ export default function Footer() {
       </div>
 
       <div>
-        <h1 className="text-2xl py-4">Services</h1>
+        <h1 className="text-3xl py-4 text-center">Services</h1>
         <ul className="grid place-items-center gap-2 ">
           <li className="text-xl">Bridal</li>
           <li className="text-xl">Photoshoot</li>
@@ -35,37 +35,39 @@ export default function Footer() {
         </ul>
       </div>
 
-      <div>
-        <h1 className="text-2xl py-4">Contact</h1>
+      <div className="flex justify-center pl-[10rem]">
+        <div className="flex flex-col ">
+          <h1 className="text-3xl py-4 ">Contact</h1>
 
-        <div className="grid  gap-6">
-          <div className="flex gap-2 ">
-            <LocalPhoneIcon />
-            <span className="hover:underline">
-              <a href="tel:08668079374">08668079374</a>
-            </span>
-          </div>
-          <div className="flex gap-2">
-            <EmailIcon />
-            <span className="hover:underline">
-              <a href="mailto:Safiyasekar87@gmail.com">
-                Safiyasekar87@gmail.com
-              </a>
-            </span>
-          </div>
-          <div
-            className="flex gap-2 hover:cursor-pointer hover:underline"
-            onClick={handleMapclick}
-          >
-            <LocationOnIcon />
-            <p className="grid uppercase">
-              <span>Safiya&apos;s makeover</span>
-              <span className="text-nowrap ">
-                333, Bharathi St, MG Road Area,
-                <br /> Puducherry, 605001.
+          <div className="grid   gap-6">
+            <div className="flex gap-2 ">
+              <LocalPhoneIcon />
+              <span className="hover:underline">
+                <a href="tel:08668079374">08668079374</a>
               </span>
-              <span>Tamil nadu 629810</span>
-            </p>
+            </div>
+            <div className="flex gap-2">
+              <EmailIcon />
+              <span className="hover:underline">
+                <a href="mailto:Safiyasekar87@gmail.com">
+                  Safiyasekar87@gmail.com
+                </a>
+              </span>
+            </div>
+            <div
+              className="flex  gap-2 hover:cursor-pointer hover:underline"
+              onClick={handleMapclick}
+            >
+              <LocationOnIcon />
+              <p className="grid uppercase">
+                <span>Safiya&apos;s makeover</span>
+                <span className="text-nowrap ">
+                  333, Bharathi St, MG Road Area,
+                  <br /> Puducherry, 605001.
+                </span>
+                <span>Tamil nadu 629810</span>
+              </p>
+            </div>
           </div>
         </div>
       </div>
