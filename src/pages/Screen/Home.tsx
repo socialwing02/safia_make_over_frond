@@ -1,20 +1,21 @@
+import CardList from "../../components/CardList";
 import CarouselFade from "../../components/Carosuel";
 import HeroContent from "../../components/HeroContent";
+import Marquee from "../../components/Marquee";
+import { marqueeHoneyImages } from "../../constant/data";
 import ImageGallery from "../Home/ImageGallery";
-import ImageSelection from "../Home/ImageSelection/ImageSelection";
-import ImageTab from "../Home/ImageSelection/ImageTab";
-import Testimonal from "../Home/Testimonal";
+import Testimonial from "../Home/Testimonal";
 
 export default function Home() {
   return (
     <>
       <CarouselFade />
       <HeroContent />
-      {/* <CardList /> */}
       <ImageGallery />
-      <ImageSelection />
 
-      <Testimonal />
+      <CardList />
+      <Marquee images={marqueeHoneyImages} animateClassName="enableAnimation" />
+      <Testimonial />
     </>
   );
 }

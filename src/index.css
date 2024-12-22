@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+p {
+  text-wrap: pretty;
+}
+
 input {
   outline: none;
 }
@@ -284,3 +288,58 @@ input[type="number"]::-webkit-outer-spin-button {
   transform: translateX(-50%);
   bottom: -10px;
 }
+
+.card-list {
+  width: 90vw;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  gap: 1.4rem;
+  place-content: center;
+  padding-block: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  padding-inline: 1rem;
+  padding-block: 0.8rem;
+  border-radius: 12px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  cursor: pointer;
+
+  transition: background 0.4s ease, transform 0.3s ease;
+
+  h1 {
+    padding-top: 0.5rem;
+    font-size: clamp(1.4rem, 1.7vw, 3rem);
+  }
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card:nth-child(1):hover,
+.card:nth-child(2):hover,
+.card:nth-child(3):hover,
+.card:nth-child(4):hover,
+.card:nth-child(5):hover,
+.card:nth-child(6):hover {
+  background: linear-gradient(
+      45deg,
+      rgba(178, 38, 38, 0.7) 0%,
+      rgba(231, 167, 167, 0.7) 100%
+    ),
+    url("/brush.jpg");
+  background-size: cover;
+  color: whitesmoke;
+
+  svg {
+    color: whitesmoke;
+  }
+}
+
+/* The remaining nth-child hover effects stay the same, as transitions are inherited */

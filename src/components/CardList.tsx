@@ -3,10 +3,10 @@ import { cardData } from "../constant/data";
 
 export default function CardList() {
   return (
-    <div>
-      <div className="flex gap-[170px] py-10 ml-[150px]">
+    <div className="flex justify-center">
+      <div className="card-list">
         {cardData.map((item) => (
-          <Card item={item} />
+          <Card />
         ))}
       </div>
     </div>

@@ -5,7 +5,7 @@ type Props = {
 
 export default function Marquee({ animateClassName, images }: Props) {
   return (
-    <section className={animateClassName}>
+    <section className={`${animateClassName} sm:hidden`}>
       <div className="marquee">
         <ul className="marqueeContent">
           {images.map((image) => (

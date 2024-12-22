@@ -1,17 +1,24 @@
+import { motion } from "framer-motion";
+import { fadeIn } from "../utils/variants";
+
 export default function HeroContent() {
   return (
-    <div>
+    <motion.div
+    // variants={fadeIn("up", 0.2)}
+    // initial="hidden"
+    // whileInView="show"
+    >
       <h1 className="font-playball text-yellow-700 m-8 text-center text-4xl">
         Professional Bridal Makeup Artist in Mumbai
       </h1>
-      <h2 className="font-playball  m-8 text-center text-3xl text-gray-800">
+      <h2 className="font-playball m-8 text-center text-3xl text-gray-800">
         You’re already beautiful. Makeup only exists to accentuate your natural
         beauty
       </h2>
       <h1 className="m-8 text-center text-3xl text-gray-800">
         ADDING ELEGANCE TO OUR EXTRAORDINARY BRIDAL MAKEUP SINCE 2017
       </h1>
-      <p className=" m-8 text-center text-1xl text-gray-800">
+      <p className="m-8 text-center text-1xl text-gray-800">
         Hey! We are BrideMeUp, providing the best bridal makeup artist in Mumbai
         and your besties when it comes to THE big day! A passionate team of
         makeup professionals, headed by Chanderlata, a renowned professional
@@ -19,9 +26,9 @@ export default function HeroContent() {
         beauty guru…your “go to” people who will make sure you are relaxed,
         smiling, on time, and absolutely breathtaking on your wedding day.
       </p>
-      <h1 className="  m-8 text-center font-bold text-3xl text-gray-800">
+      <h1 className="m-8 text-center font-bold text-3xl text-gray-800">
         OUR MAKEUP SERVICES INCLUDE
       </h1>
-    </div>
+    </motion.div>
   );
 }

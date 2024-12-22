@@ -17,7 +17,7 @@ export default function Footer() {
         <h1 className="text-3xl py-4 text-center">Quick Links</h1>
         <ul className="grid place-items-center  gap-2">
           {navlist.map((item) => (
-            <li className="text-xl hover:underline">
+            <li className="text-xl hover:underline" key={item.name}>
               <Link key={item.name} to={item.path}>
                 {item.name}
               </Link>
@@ -35,7 +35,7 @@ export default function Footer() {
         </ul>
       </div>
 
-      <div className="flex justify-center pl-[10rem]">
+      <div className="flex justify-center pl-[5rem]">
         <div className="flex flex-col ">
           <h1 className="text-3xl py-4 ">Contact</h1>
 

@@ -1,34 +1,7 @@
-import React, { useState, useEffect } from "react";
-
-import image1 from "../../assets/PhotoShoot/1.png";
-import image2 from "../../assets/PhotoShoot/12.png";
-import image3 from "../../assets/PhotoShoot/11.png";
-import image4 from "../../assets/PhotoShoot/10.png";
+import { useState, useEffect } from "react";
+import { testimonials } from "../../constant/data";
 
 export default function Testimonial() {
-  const testimonials = [
-    {
-      img: image1,
-      name: "Sujatha",
-      text: "She is very kind and professional😍 I am really satisfied with the makeup look created for me..Out of all my makeups done so ever.. she is best makeup artist in town👍 She handled my skin very carefully and also suggested good look for my face structure.. All of my frnds and family complemented my makeup as best over the other makeup I have done. Thank u so much mam... I Highly recommend her for the awesome work she made ",
-    },
-    {
-      img: image2,
-      name: "Farhana",
-      text: "Got service for me and my brother's wife we both loved the makeup alot. I felt like myself even after wearing the makeup and my brother's wife was the bride she looked absolutely stunning everyone praised her look . My brother doesn't like heavy make-ups he himself praised us that we are looking stunning 💝 thank you so much 😍😍 …",
-    },
-    {
-      img: image3,
-      name: "Kavitha",
-      text: "It was an amazing experience with safiya makeover, its an fabulous working experience with u mam your final makeup was so amazed us, much more better than what we expect ❤️❤️❤️",
-    },
-    {
-      img: image4,
-      name: "Joshua",
-      text: "Safiya’s Makeover made my wedding day unforgettable with her amazing bridal makeup skills. She was professional, friendly, and made sure I looked gorgeous. I’m so grateful for her incredible work!",
-    },
-  ];
-
   const [currentIndex, setCurrentIndex] = useState(0);
   const [animation, setAnimation] = useState({ exit: "", enter: "" });
 
