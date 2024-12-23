@@ -1,4 +1,6 @@
-import image2 from "../../assets/PhotoShoot/1.png";
+import { motion } from "framer-motion";
+import image2 from "../../assets/Logo/founder.jpg";
+import { fadeIn } from "../../utils/variants";
 
 export default function CardContent() {
   return (
@@ -43,6 +45,6 @@ export default function CardContent() {
           </p>
         </motion.div>
       </div>
-    </div>
+    </>
   );
 }

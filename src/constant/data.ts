@@ -256,12 +256,12 @@ export const timelineData = [
   },
 ];
 
-import flip1 from "../assets/PhotoShoot/10.png";
-import flip2 from "../assets/PhotoShoot/18.png";
-import flip3 from "../assets/PhotoShoot/19.png";
-import flip4 from "../assets/PhotoShoot/16.png";
-import flip5 from "../assets/PhotoShoot/20.png";
-import flip6 from "../assets/PhotoShoot/21.png";
+import flip1 from "../assets/honey/honey-4.webp";
+import flip2 from "../assets/honey/honey-4.webp";
+import flip3 from "../assets/honey/honey-4.webp";
+import flip4 from "../assets/honey/honey-4.webp";
+import flip5 from "../assets/honey/honey-4.webp";
+import flip6 from "../assets/honey/honey-4.webp";
 
 export const flipCardData = [
   {

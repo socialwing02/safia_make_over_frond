@@ -1,5 +1,5 @@
 import React from "react";
-import image2 from "../../assets/PhotoShoot/11.png";
+import image2 from "../../assets/Testimonal/client2.webp";
 
 const Service = () => {
   return (
@@ -18,7 +18,7 @@ const Service = () => {
             should be your choice!
           </p>
           <h2 className="text-3xl font-playball text-center  text-yellow-600   font-bold mb-8">
-          Is HD Makeup better than Airbrush Makeup?
+            Is HD Makeup better than Airbrush Makeup?
           </h2>
           <p className="mb-4">
             Safiya, the heart and soul behind Safiya’s Makeover, is a seasoned

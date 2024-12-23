@@ -1,4 +1,3 @@
-import React from "react";
 import ReactDOM from "react-dom";
 import "./FlipCard.css"; // Import the CSS file
 import { flipCardData } from "../../constant/data";
@@ -6,7 +5,7 @@ import { flipCardData } from "../../constant/data";
 const FlipCard = () => {
   return (
     <div className="bg-red-50 w-full min-h-screen">
-      <div className="card-list max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 p-10">
+      <div className="card-list   gap-6 p-10">
         {flipCardData.map((item) => (
           <div className="flip-card mx-auto" key={item.title}>
             <div className="flip-card-inner">
