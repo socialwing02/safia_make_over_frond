@@ -261,7 +261,7 @@ import flip2 from "../assets/honey/honey-4.webp";
 import flip3 from "../assets/honey/honey-4.webp";
 import flip4 from "../assets/honey/honey-4.webp";
 import flip5 from "../assets/honey/honey-4.webp";
-import flip6 from "../assets/honey/honey-4.webp";
+import flip6 from "../assets/honey/honey5.webp";
 
 export const flipCardData = [
   {

@@ -1,11 +1,11 @@
-import React from "react";
-
 const ContentLast = () => {
   return (
     <div className="">
       <div className="h-[530px] mb-[150px] mt-[150px] w-[1200px] py-1 rounded-r-[200px] bg-pink-100">
-      <div className="text-center mt-[10px] p-3">
-        <h1 className="text-5xl font-playball">Makeup better than Airbrush</h1>
+        <div className="text-center mt-[10px] p-3">
+          <h1 className="text-5xl font-playball">
+            Makeup better than Airbrush
+          </h1>
         </div>
         <div className="h-[60px] w-[1000px] mt-[50px] p-3 bg-white">
           <p className="">
@@ -40,7 +40,9 @@ const ContentLast = () => {
 
       <div className="h-[530px] justify-self-end mb-[150px] mt-[150px] w-[1200px] py-1 rounded-l-[200px] bg-pink-100">
         <div className="text-center mt-[10px] p-3">
-        <h1 className="text-5xl font-playball">Makeup better than Airbrush</h1>
+          <h1 className="text-5xl font-playball">
+            Makeup better than Airbrush
+          </h1>
         </div>
 
         <div className="h-[60px] rounded-l-[200px] justify-self-end w-[1000px] mt-[30px] p-3 bg-white">

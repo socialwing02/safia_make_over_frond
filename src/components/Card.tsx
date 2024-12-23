@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { CardData } from "../constant/data";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 type Props = {
   item: CardData;

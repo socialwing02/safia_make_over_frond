@@ -1,4 +1,3 @@
-import React from "react";
 import image2 from "../../assets/Testimonal/client2.webp";
 
 const Service = () => {

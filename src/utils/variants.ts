@@ -34,7 +34,6 @@ export const staggerParent = {
   },
   show: {
     opacity: 1,
-
     transition: {
       staggerChildren: 0.1,
 
@@ -53,7 +52,7 @@ export const staggerChild = {
     opacity: 1,
     scale: 1,
     transition: {
-      duration: 0.5, // Duration for each child's animation
+      duration: 0.5,
     },
   },
 };
@@ -65,7 +64,7 @@ export const staggerChildScale = {
   },
   show: {
     opacity: 1,
-    scale: [1.5, 1], // Scale to 1.5 then back to 1
+    scale: [2, 1], // Scale to 1.5 then back to 1
     transition: {
       duration: 1, // Total animation duration
     },
