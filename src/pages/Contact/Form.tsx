@@ -42,12 +42,9 @@ export default function Form() {
   }
 
   return (
-    <>
-      <h1 className="text-[clamp(1.9rem,2.4vw,4rem)] text-center my-8">
-        Contact us
-      </h1>
-      <div className="max-w-[700px] mx-auto shadow-lg border mt-10 flex rounded-xl gap-10">
-        <form className="flex flex-col gap-3 p-8 " onSubmit={handleSubmit}>
+    <section className="flex items-center  justify-center">
+      <div className=" shadow-lg border mt-10 flex flex-col sm:flex-row    rounded-xl gap-10">
+        <form className="flex flex-col gap-3 p-8" onSubmit={handleSubmit}>
           <Input
             label="Name"
             type="text"
@@ -131,7 +128,7 @@ export default function Form() {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 }
 

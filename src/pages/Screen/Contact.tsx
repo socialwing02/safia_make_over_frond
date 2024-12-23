@@ -3,6 +3,9 @@ import Form from "../Contact/Form";
 export default function Contact() {
   return (
     <>
+      <h1 className="text-[clamp(1.9rem,2.4vw,4rem)] text-center mt-2">
+        Contact us
+      </h1>
       <Form />
       <div>
         <iframe

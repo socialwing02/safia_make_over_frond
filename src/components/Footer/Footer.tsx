@@ -61,7 +61,7 @@ export default function Footer() {
               <LocationOnIcon />
               <p className="grid uppercase">
                 <span>Safiya&apos;s makeover</span>
-                <span className="text-nowrap ">
+                <span>
                   333, Bharathi St, MG Road Area,
                   <br /> Puducherry, 605001.
                 </span>

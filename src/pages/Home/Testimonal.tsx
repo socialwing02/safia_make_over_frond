@@ -1,6 +1,3 @@
-import React from "react";
-
-import testmonialImg from "../../assets/happy-customer.jpg";
 import TestimonialList from "./TestimonialTwo";
 
 export default function Testimonals() {

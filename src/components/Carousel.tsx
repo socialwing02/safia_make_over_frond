@@ -1,18 +1,15 @@
 import { useState, useEffect } from "react";
-import { navlist, slides } from "../constant/data";
-import { NavLink } from "react-router-dom";
-import Button from "./Button";
+import { slides } from "../constant/data";
+
 import HomeHeader from "../pages/Home/HomeHeader";
+import Button from "./Button";
+import { Link } from "react-router-dom";
 
 const CarouselFade = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
     setCurrentIndex((currentIndex + 1) % slides.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((currentIndex - 1 + slides.length) % slides.length);
   };
 
   useEffect(() => {
@@ -34,15 +31,21 @@ const CarouselFade = () => {
             className={`absolute inset-0 transition-opacity duration-1000 ${
               index === currentIndex ? "opacity-100" : "opacity-0"
             }`}
-            style={{
-              backgroundImage: `url(${slide.image})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
           >
-            <div className="absolute top-[40%] w-full text-center text-black bg-opacity-50 py-4">
+            <div
+              className="absolute inset-0"
+              style={{
+                backgroundImage: `url(${slide.image})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <div className="overlay"></div>
+            </div>
+
+            <div className="absolute top-[50%] w-full text-center text-white bg-opacity-50 py-4 font-playball z-10">
               <h3
-                className={`text-4xl font-bold transform transition-all duration-1000 ${
+                className={`text-[clamp(1.5rem,2.5vw,5rem)] font-bold transform transition-all duration-1000 ${
                   index === currentIndex
                     ? "translate-x-0 opacity-100"
                     : "-translate-x-full opacity-0"
@@ -51,7 +54,7 @@ const CarouselFade = () => {
                 {slide.title}
               </h3>
               <p
-                className={`transform transition-all duration-1000 ${
+                className={` text-[clamp(1.3rem,1.5vw,3rem)] transform transition-all duration-1000 ${
                   index === currentIndex
                     ? "translate-x-0 opacity-100"
                     : "translate-x-full opacity-0"
@@ -59,24 +62,15 @@ const CarouselFade = () => {
               >
                 {slide.description}
               </p>
+              <div className="my-5">
+                <Link to="contact">
+                  <Button className="bg-red-500 ">Book Now</Button>
+                </Link>
+              </div>
             </div>
           </div>
         ))}
       </div>
-
-      {/* Navigation Buttons */}
-      <button
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white bg-gray-800 bg-opacity-50 rounded-full p-3 hover:bg-opacity-80 z-10"
-        onClick={prevSlide}
-      >
-        &lt;
-      </button>
-      <button
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white bg-gray-800 bg-opacity-50 rounded-full p-3 hover:bg-opacity-80 z-10"
-        onClick={nextSlide}
-      >
-        &gt;
-      </button>
     </div>
   );
 };

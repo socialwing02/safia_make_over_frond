@@ -1,23 +1,14 @@
-import React, { useState } from "react";
 import { navlist } from "../../constant/data";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Button from "../../components/Button";
 import HamburgMenu from "../../components/HamburgMenu";
 
 export default function HomeHeader() {
-  const [IsDropped, setIsDropped] = useState<boolean>(false);
-
-  function handleMouseEnter() {
-    setIsDropped(true);
-  }
-
-  function handleMouseLeave() {
-    setIsDropped(false);
-  }
-
   return (
-    <header className="absolute top-0 left-0 w-full text-white bg-transparent flex justify-between p-8 border-b-2 border-transparent items-center z-10">
-      <img src="/.png" alt="" />
+    <header className="absolute top-0 left-0 w-full text-white bg-transparent flex justify-between px-8 border-b-2 border-transparent items-center z-10">
+      <Link to="/">
+        <img src="safia-logo.png" alt="" className="w-[120px] object-cover" />
+      </Link>
       <div className="sm:flex gap-20 items-center hidden">
         <nav>
           <ul className="flex gap-10">
@@ -41,7 +32,9 @@ export default function HomeHeader() {
             ))}
           </ul>
         </nav>
-        <Button className="bg-red-500">Contact us</Button>
+        <Link to="contact">
+          <Button className="bg-red-500">Contact us</Button>
+        </Link>
       </div>
 
       <HamburgMenu />

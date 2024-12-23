@@ -1,17 +1,29 @@
-import image2 from "../../assets/PhotoShoot/1.png";
+import { motion } from "framer-motion";
+import image2 from "../../assets/Logo/founder.jpg";
+import { fadeIn } from "../../utils/variants";
 
 export default function CardContent() {
   return (
-    <div className="">
-      <div className="flex flex-col lg:flex-row py-5 lg:w-[min(1100px,90vw)] items-center mx-auto">
-        <div className="lg:w-1/2 p-4 order-1 lg:order-none">
+    <>
+      <div className="flex flex-col gap-8 lg:flex-row py-5 lg:w-[min(1100px,90vw)] items-center mx-auto">
+        <motion.div
+          className=" p-4 order-1 lg:order-none"
+          variants={fadeIn("left", 0.3)}
+          initial="hidden"
+          whileInView="show"
+        >
           <img
             src={image2}
-            alt="Safiya's Photo"
-            className="w-full h-auto rounded-2xl shadow-lg"
+            alt="founder"
+            className="rounded-2xl shadow-lg w-[450px] h-[500px] object-cover"
           />
-        </div>
-        <div className="text-center lg:text-left lg:w-1/2 p-4 order-2 lg:order-none">
+        </motion.div>
+        <motion.div
+          variants={fadeIn("right", 0.3)}
+          initial="hidden"
+          whileInView="show"
+          className="text-center lg:text-left lg:w-1/2 p-4 order-2 lg:order-none"
+        >
           <h1 className="text-6xl font-playball text-center  text-yellow-600   font-bold mb-8">
             Meet
           </h1>
@@ -31,8 +43,8 @@ export default function CardContent() {
             Today, she continues to elevate the bridal makeup experience,
             ensuring each client’s vision is beautifully realized.
           </p>
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </>
   );
 }
