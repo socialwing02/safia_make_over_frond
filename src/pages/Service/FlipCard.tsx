@@ -15,8 +15,6 @@ const FlipCard = () => {
                 <h1 className="text-xl font-semibold py-4 m-3">{item.title}</h1>
                 <p className="font-light py-4 m-3">{item.content}</p>
               </div>
-
-              {/* Back of the Card */}
               <div className="flip-card-back">
                 <img
                   src={item.image}
