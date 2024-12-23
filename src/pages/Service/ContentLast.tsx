@@ -2,72 +2,76 @@ import React from "react";
 
 const ContentLast = () => {
   return (
-    <div className="">
-      <div className="h-[530px] mb-[150px] mt-[150px] w-[1200px] py-1 rounded-r-[200px] bg-pink-100">
-      <div className="text-center mt-[10px] p-3">
-        <h1 className="text-5xl font-playball">Makeup better than Airbrush</h1>
+    <div className="flex flex-col items-center gap-10 my-10 px-4">
+      {/* First Section */}
+      <div className="bg-pink-100 rounded-r-[100px] h-full sm:rounded-r-[180px] md:rounded-r-[230px] p-5 w-full max-w-8xl">
+        <div className="text-center">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-playball mb-6">
+            Makeup better than Airbrush
+          </h1>
         </div>
-        <div className="h-[60px] w-[1000px] mt-[50px] p-3 bg-white">
-          <p className="">
-            {" "}
-            With the advent of High Definition lenses and high-quality cameras
-            in cell phones, it can get a little tricky for the bride to look
-            natural in
-          </p>
-        </div>
-        <div className="h-[60px] w-[750px] p-3 mt-[40px] bg-white">
-          <p>
-            {" "}
-            With the advent of High Definition lenses and high-quality cameras
-            in cell phones, it can get a{" "}
-          </p>
-        </div>
-        <div className="h-[60px] w-[600px] p-3 mt-[40px] bg-white">
-          <p>
-            {" "}
-            With the advent of High Definition lenses and high-quality cameras
-            in cell phones, it can get a{" "}
-          </p>
-        </div>
-        <div className="h-[60px] w-[450px] p-3 mt-[40px] bg-white">
-          <p>
-            {" "}
-            With the advent of High Definition lenses and high-quality cameras
-            in cell phones, it can get a{" "}
-          </p>
+        <div className="space-y-6">
+          <div className="bg-white p-3 rounded shadow-md max-w-5xl mx-auto">
+            <p>
+              With the advent of High Definition lenses and high-quality cameras
+              in cell phones, it can get a little tricky for the bride to look
+              natural in photos.
+            </p>
+          </div>
+          <div className="bg-white p-3 rounded shadow-md max-w-4xl mx-auto">
+            <p>
+              HD makeup ensures the bride looks stunning in every picture with a
+              soft focus and radiant complexion.
+            </p>
+          </div>
+          <div className="bg-white p-3 rounded shadow-md max-w-3xl mx-auto">
+            <p>
+              It combines light-scattering particles and advanced techniques for
+              a flawless finish.
+            </p>
+          </div>
+          <div className="bg-white p-3 rounded shadow-md max-w-2xl mx-auto">
+            <p>
+              Achieve a natural and glamorous look, perfect for high-quality
+              photography.
+            </p>
+          </div>
         </div>
       </div>
 
-      <div className="h-[530px] justify-self-end mb-[150px] mt-[150px] w-[1200px] py-1 rounded-l-[200px] bg-pink-100">
-        <div className="text-center mt-[10px] p-3">
-        <h1 className="text-5xl font-playball">Makeup better than Airbrush</h1>
+      {/* Second Section */}
+      <div className="bg-pink-100 rounded-l-[100px] sm:rounded-l-[150px] md:rounded-l-[200px] p-5 w-full max-w-6xl">
+        <div className="text-center">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-playball mb-6">
+            Makeup better than Airbrush
+          </h1>
         </div>
-
-        <div className="h-[60px] rounded-l-[200px] justify-self-end w-[1000px] mt-[30px] p-3 bg-white">
-          <p className="">
-            {" "}
-            With the advent of High Definition lenses and high-quality cameras
-            in cell phones, it can get a little tricky for the bride to look
-            natural in
-          </p>
-        </div>
-
-        <div className="h-[60px] rounded-l-[200px] justify-self-end w-[750px] p-3 mt-[40px] bg-white">
-          <p>
-            {" "}
-            With the advent of High Definition lenses and high-quality cameras
-            in cell phones, it can get a{" "}
-          </p>
-        </div>
-        <div className="h-[60px] rounded-l-[200px] w-[600px] justify-self-end p-3 mt-[40px] bg-white">
-          <p>
-            {" "}
-            With the advent of High Definition lenses and high-quality cameras
-            in
-          </p>
-        </div>
-        <div className="h-[60px] rounded-l-[200px] w-[450px] justify-self-end p-3 mt-[40px] bg-white">
-          <p> With the advent of High Definition lenses and high-quality </p>
+        <div className="space-y-6">
+          <div className="bg-white p-3 rounded shadow-md max-w-5xl mx-auto">
+            <p>
+              With the advent of High Definition lenses and high-quality cameras
+              in cell phones, it can get a little tricky for the bride to look
+              natural in photos.
+            </p>
+          </div>
+          <div className="bg-white p-3 rounded shadow-md max-w-4xl mx-auto">
+            <p>
+              HD makeup ensures the bride looks stunning in every picture with a
+              soft focus and radiant complexion.
+            </p>
+          </div>
+          <div className="bg-white p-3 rounded shadow-md max-w-3xl mx-auto">
+            <p>
+              It combines light-scattering particles and advanced techniques for
+              a flawless finish.
+            </p>
+          </div>
+          <div className="bg-white p-3 rounded shadow-md max-w-2xl mx-auto">
+            <p>
+              Achieve a natural and glamorous look, perfect for high-quality
+              photography.
+            </p>
+          </div>
         </div>
       </div>
     </div>
