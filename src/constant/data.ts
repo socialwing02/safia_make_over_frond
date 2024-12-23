@@ -255,3 +255,49 @@ export const timelineData = [
     star: true,
   },
 ];
+
+import flip1 from "../assets/PhotoShoot/10.png";
+import flip2 from "../assets/PhotoShoot/18.png";
+import flip3 from "../assets/PhotoShoot/19.png";
+import flip4 from "../assets/PhotoShoot/16.png";
+import flip5 from "../assets/PhotoShoot/20.png";
+import flip6 from "../assets/PhotoShoot/21.png";
+
+export const flipCardData = [
+  {
+    image: flip1,
+    title: "Blends Perfectly",
+    content:
+      "She is very kind and professional😍 I am really satisfied with the makeup look created for me.",
+  },
+  {
+    image: flip2,
+    title: "Natural Look",
+    content:
+      "Got service for me and my brother's wife we both loved the makeup alot",
+  },
+
+  {
+    image: flip3,
+    title: "Conceals Imperfication",
+    content:
+      "It was an amazing experience with safiya makeover, its an fabulous working experience with u mam your final makeup was so amazed us, much more better than what we expect ❤️❤️❤️",
+  },
+  {
+    image: flip4,
+    title: "silicon Light-Reflecting",
+    content: "    If you want to achieve a flawless look yet maintain more . ",
+    width: "20px",
+  },
+  {
+    image: flip5,
+    title: "Blends Perfectly",
+    content: "something usual",
+  },
+  {
+    image: flip6,
+    title: "Suitable For All Skin",
+    content:
+      "Safiya, the heart and soul behind Safiya’s Makeover, is a seasoned makeup artist with a passion for creating flawless bridal looks.",
+  },
+];
