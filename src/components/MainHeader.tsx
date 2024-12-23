@@ -6,7 +6,7 @@ import HamburgMenu from "./HamburgMenu";
 export default function MainHeader() {
   return (
     <>
-      <header className="bg-white flex justify-between p-8 border-b-2 items-center">
+      <header className="bg-white flex justify-between p-8 border items-center">
         <img src="/log.png" alt="" />
 
         <div className="hidden sm:inline-block">

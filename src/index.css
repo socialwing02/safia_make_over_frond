@@ -300,7 +300,7 @@ input[type="number"]::-webkit-outer-spin-button {
   padding-inline: 1rem;
 
   @media (max-width: 1100px) {
-    grid-template-columns: repeat(2, 350px);
+    grid-template-columns: repeat(2, 390px);
   }
   @media (max-width: 750px) {
     grid-template-columns: 1fr;
@@ -312,8 +312,8 @@ input[type="number"]::-webkit-outer-spin-button {
   flex-direction: column;
   gap: 0.5rem;
   align-items: center;
-  padding-inline: 1rem;
-  padding-block: 0.8rem;
+  padding-inline: 1.5rem;
+  padding-block: 1.3rem;
   border-radius: 12px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   cursor: pointer;
@@ -324,24 +324,120 @@ input[type="number"]::-webkit-outer-spin-button {
     padding-top: 0.5rem;
     font-size: clamp(1.4rem, 1.7vw, 3rem);
   }
+
+  &:nth-child(1) {
+    svg {
+      color: rgb(208, 90, 109);
+    }
+  }
+  &:nth-child(2) {
+    svg {
+      color: #6684d4;
+    }
+  }
+  &:nth-child(3) {
+    svg {
+      color: #afdd18;
+    }
+  }
+  &:nth-child(4) {
+    svg {
+      color: #d45faf;
+    }
+  }
+  &:nth-child(5) {
+    svg {
+      color: rgb(104, 32, 129);
+    }
+  }
+  &:nth-child(6) {
+    svg {
+      color: rgb(228, 34, 34);
+    }
+  }
 }
 
 .card:hover {
   transform: scale(1.05);
 }
 
-.card:nth-child(1):hover,
-.card:nth-child(2):hover,
-.card:nth-child(3):hover,
-.card:nth-child(4):hover,
-.card:nth-child(5):hover,
+.card:nth-child(1):hover {
+  background: linear-gradient(
+      45deg,
+      rgba(178, 38, 38, 0.7) 0%,
+      rgba(231, 167, 167, 0.7) 100%
+    ),
+    url("./assets/Card/6.webp");
+  background-size: cover;
+  color: whitesmoke;
+
+  svg {
+    color: whitesmoke;
+  }
+}
+.card:nth-child(2):hover {
+  background: linear-gradient(
+      45deg,
+      rgba(178, 38, 38, 0.7) 0%,
+      rgba(231, 167, 167, 0.7) 100%
+    ),
+    url("./assets/Card/3.webp");
+  background-size: cover;
+  color: whitesmoke;
+
+  svg {
+    color: whitesmoke;
+  }
+}
+.card:nth-child(3):hover {
+  background: linear-gradient(
+      45deg,
+      rgba(178, 38, 38, 0.7) 0%,
+      rgba(231, 167, 167, 0.7) 100%
+    ),
+    url("./assets/Card/1.webp");
+  background-size: cover;
+  color: whitesmoke;
+
+  svg {
+    color: whitesmoke;
+  }
+}
+.card:nth-child(4):hover {
+  background: linear-gradient(
+      45deg,
+      rgba(178, 38, 38, 0.7) 0%,
+      rgba(231, 167, 167, 0.7) 100%
+    ),
+    url("./assets/Card/2.webp");
+  background-size: cover;
+  color: whitesmoke;
+
+  svg {
+    color: whitesmoke;
+  }
+}
+.card:nth-child(5):hover {
+  background: linear-gradient(
+      45deg,
+      rgba(178, 38, 38, 0.7) 0%,
+      rgba(231, 167, 167, 0.7) 100%
+    ),
+    url("./assets/Card/4.webp");
+  background-size: cover;
+  color: whitesmoke;
+
+  svg {
+    color: whitesmoke;
+  }
+}
 .card:nth-child(6):hover {
   background: linear-gradient(
       45deg,
       rgba(178, 38, 38, 0.7) 0%,
       rgba(231, 167, 167, 0.7) 100%
     ),
-    url("/brush.jpg");
+    url("./assets/Card/flower.webp");
   background-size: cover;
   color: whitesmoke;
 
@@ -350,4 +446,9 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 }
 
-/* The remaining nth-child hover effects stay the same, as transitions are inherited */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}

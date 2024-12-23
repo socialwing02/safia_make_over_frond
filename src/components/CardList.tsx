@@ -10,8 +10,8 @@ export default function ServiceList() {
 
       <div className="flex justify-center">
         <div className="card-list">
-          {cardData.map((item) => (
-            <Card />
+          {cardData.map((item, index) => (
+            <Card item={item} key={index} />
           ))}
         </div>
       </div>

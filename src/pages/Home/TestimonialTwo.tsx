@@ -1,30 +1,31 @@
 import StarIcon from "@mui/icons-material/Star";
 
-import image from "../../assets/PhotoShoot/1.png";
 import { motion } from "framer-motion";
 import { staggerChildScale, staggerParent } from "../../utils/variants";
+import { testimonials, TestimonialType } from "../../constant/data";
+import { numericDate } from "../../utils/util";
 
-export function TestimonialCard() {
+type Props = {
+  item: TestimonialType;
+};
+
+export function TestimonialCard({ item }: Props) {
   return (
     <div className="w-[min(480px,90vw)] border-2 grid gap-2 p-3 rounded-lg shadow-md">
       <div className="flex gap-3 items-center">
-        <img src={image} alt="" className="w-10 h-10 rounded-full" />
+        <img src={item.img} alt="" className="w-10 h-10 rounded-full" />
         <div className="grid">
-          <h3 className="font-semibold"> Mary Queen</h3>
-          <h5> occasion</h5>
+          <h3 className="font-semibold">{item.name}</h3>
+          <h5 className="text-sm text-gray-500"> {numericDate(item.date)}</h5>
         </div>
       </div>
 
       <div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-          sapiente enim consequuntur odit excepturi voluptatum incidunt beatae
-          sit temporibus.
-        </p>
+        <p>{item.text}</p>
       </div>
 
       <motion.div variants={staggerParent} initial="hidden" whileInView="show">
-        {Array.from({ length: 5 }).map((i, index) => (
+        {Array.from({ length: 5 }).map((_, index) => (
           <motion.span key={index} variants={staggerChildScale}>
             <StarIcon sx={{ color: "yellow" }} />
           </motion.span>
@@ -37,8 +38,8 @@ export function TestimonialCard() {
 export default function TestimonialList() {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 ">
-      {Array.from({ length: 6 }).map((i, index) => (
-        <TestimonialCard key={index} />
+      {testimonials.map((item, index) => (
+        <TestimonialCard item={item} key={index} />
       ))}
     </div>
   );

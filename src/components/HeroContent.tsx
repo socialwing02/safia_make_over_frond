@@ -1,34 +1,32 @@
-import { motion } from "framer-motion";
-import { fadeIn } from "../utils/variants";
-
 export default function HeroContent() {
   return (
-    <motion.div
-    // variants={fadeIn("up", 0.2)}
-    // initial="hidden"
-    // whileInView="show"
-    >
-      <h1 className="font-playball text-yellow-700 m-8 text-center text-4xl">
-        Professional Bridal Makeup Artist in Mumbai
+    <div>
+      <h1 className="font-playball text-yellow-700 m-8 text-center text-[clamp(2rem,3vw,5rem)]">
+        Professional Bridal Makeup Artist in Pondicherry
       </h1>
-      <h2 className="font-playball m-8 text-center text-3xl text-gray-800">
+      <h2 className="font-playball m-8 text-center text-[clamp(2rem,2.3vw,5rem)] text-gray-800">
         You’re already beautiful. Makeup only exists to accentuate your natural
         beauty
       </h2>
-      <h1 className="m-8 text-center text-3xl text-gray-800">
-        ADDING ELEGANCE TO OUR EXTRAORDINARY BRIDAL MAKEUP SINCE 2017
+      <h1 className="m-8 text-center text-[clamp(2rem,2vw,4rem)] text-gray-800">
+        ADDING ELEGANCE TO OUR EXTRAORDINARY BRIDAL MAKEUP SINCE 2008{" "}
       </h1>
-      <p className="m-8 text-center text-1xl text-gray-800">
-        Hey! We are BrideMeUp, providing the best bridal makeup artist in Mumbai
-        and your besties when it comes to THE big day! A passionate team of
-        makeup professionals, headed by Chanderlata, a renowned professional
-        bridal makeup artist in Mumbai. BrideMeUp is your all in one, on site,
-        beauty guru…your “go to” people who will make sure you are relaxed,
-        smiling, on time, and absolutely breathtaking on your wedding day.
+      <p className="m-8 text-center text-[clamp(1rem,1.2vw,3rem)] text-gray-800">
+        At BrideMeUp, we understand that your wedding day is one of the most
+        important days of your life. Led by Safiya, a renowned bridal makeup
+        artist in Pondicherry, our passionate team of experts is dedicated to
+        making you feel confident and beautiful. We provide personalized,
+        on-site makeup services for brides and their bridal parties, ensuring
+        that everyone looks and feels their best. With high-quality products and
+        techniques, we create a flawless, long-lasting look that will leave you
+        smiling, relaxed, and absolutely breathtaking on your big day. BrideMeUp
+        is proud to hold the record for the fastest bridal makeup application in
+        just 25 minutes in 2022. Let us be your 'go-to' beauty team, taking care
+        of all your bridal beauty needs so you can focus on enjoying the moment
       </p>
       <h1 className="m-8 text-center font-bold text-3xl text-gray-800">
         OUR MAKEUP SERVICES INCLUDE
       </h1>
-    </motion.div>
+    </div>
   );
 }
