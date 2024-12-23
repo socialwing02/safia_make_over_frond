@@ -7,34 +7,32 @@ const ContentLast = () => {
             Makeup better than Airbrush
           </h1>
         </div>
-        <div className="h-[60px] w-[1000px] mt-[50px] p-3 bg-white">
-          <p className="">
-            {" "}
-            With the advent of High Definition lenses and high-quality cameras
-            in cell phones, it can get a little tricky for the bride to look
-            natural in
-          </p>
-        </div>
-        <div className="h-[60px] w-[750px] p-3 mt-[40px] bg-white">
-          <p>
-            {" "}
-            With the advent of High Definition lenses and high-quality cameras
-            in cell phones, it can get a{" "}
-          </p>
-        </div>
-        <div className="h-[60px] w-[600px] p-3 mt-[40px] bg-white">
-          <p>
-            {" "}
-            With the advent of High Definition lenses and high-quality cameras
-            in cell phones, it can get a{" "}
-          </p>
-        </div>
-        <div className="h-[60px] w-[450px] p-3 mt-[40px] bg-white">
-          <p>
-            {" "}
-            With the advent of High Definition lenses and high-quality cameras
-            in cell phones, it can get a{" "}
-          </p>
+        <div className="space-y-6">
+          <div className="bg-white p-3 rounded shadow-md max-w-5xl mx-auto">
+            <p>
+              With the advent of High Definition lenses and high-quality cameras
+              in cell phones, it can get a little tricky for the bride to look
+              natural in photos.
+            </p>
+          </div>
+          <div className="bg-white p-3 rounded shadow-md max-w-4xl mx-auto">
+            <p>
+              HD makeup ensures the bride looks stunning in every picture with a
+              soft focus and radiant complexion.
+            </p>
+          </div>
+          <div className="bg-white p-3 rounded shadow-md max-w-3xl mx-auto">
+            <p>
+              It combines light-scattering particles and advanced techniques for
+              a flawless finish.
+            </p>
+          </div>
+          <div className="bg-white p-3 rounded shadow-md max-w-2xl mx-auto">
+            <p>
+              Achieve a natural and glamorous look, perfect for high-quality
+              photography.
+            </p>
+          </div>
         </div>
       </div>
 
@@ -44,32 +42,32 @@ const ContentLast = () => {
             Makeup better than Airbrush
           </h1>
         </div>
-
-        <div className="h-[60px] rounded-l-[200px] justify-self-end w-[1000px] mt-[30px] p-3 bg-white">
-          <p className="">
-            {" "}
-            With the advent of High Definition lenses and high-quality cameras
-            in cell phones, it can get a little tricky for the bride to look
-            natural in
-          </p>
-        </div>
-
-        <div className="h-[60px] rounded-l-[200px] justify-self-end w-[750px] p-3 mt-[40px] bg-white">
-          <p>
-            {" "}
-            With the advent of High Definition lenses and high-quality cameras
-            in cell phones, it can get a{" "}
-          </p>
-        </div>
-        <div className="h-[60px] rounded-l-[200px] w-[600px] justify-self-end p-3 mt-[40px] bg-white">
-          <p>
-            {" "}
-            With the advent of High Definition lenses and high-quality cameras
-            in
-          </p>
-        </div>
-        <div className="h-[60px] rounded-l-[200px] w-[450px] justify-self-end p-3 mt-[40px] bg-white">
-          <p> With the advent of High Definition lenses and high-quality </p>
+        <div className="space-y-6">
+          <div className="bg-white p-3 rounded shadow-md max-w-5xl mx-auto">
+            <p>
+              With the advent of High Definition lenses and high-quality cameras
+              in cell phones, it can get a little tricky for the bride to look
+              natural in photos.
+            </p>
+          </div>
+          <div className="bg-white p-3 rounded shadow-md max-w-4xl mx-auto">
+            <p>
+              HD makeup ensures the bride looks stunning in every picture with a
+              soft focus and radiant complexion.
+            </p>
+          </div>
+          <div className="bg-white p-3 rounded shadow-md max-w-3xl mx-auto">
+            <p>
+              It combines light-scattering particles and advanced techniques for
+              a flawless finish.
+            </p>
+          </div>
+          <div className="bg-white p-3 rounded shadow-md max-w-2xl mx-auto">
+            <p>
+              Achieve a natural and glamorous look, perfect for high-quality
+              photography.
+            </p>
+          </div>
         </div>
       </div>
     </div>
