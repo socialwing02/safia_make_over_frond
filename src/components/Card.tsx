@@ -1,8 +1,10 @@
 import BrushIcon from "@mui/icons-material/Brush";
+import { motion } from "framer-motion";
+import { fadeIn } from "../utils/variants";
 
 export default function Card() {
   return (
-    <div className="card ">
+    <motion.div className="card ">
       <BrushIcon sx={{ color: "pink", fontSize: "2.7rem" }} />
       <h1>Bridal Makeup</h1>
 
@@ -12,6 +14,6 @@ export default function Card() {
         corporis qui natus enim ea maxime, rem obcaecati temporibus sapiente
         fugit!
       </p>
-    </div>
+    </motion.div>
   );
 }

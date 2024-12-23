@@ -161,3 +161,52 @@ export const marqueeHoneyImages = [
   marquee7,
   marquee8,
 ];
+
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import WorkIcon from "@mui/icons-material/Work";
+import SchoolIcon from "@mui/icons-material/School";
+
+export const timelineData = [
+  {
+    date: "3/2/2024",
+    title: "Heading",
+    content: "something usual",
+    id: 1,
+    icon: FavoriteIcon,
+  },
+  {
+    date: "3/2/2024",
+    title: "Heading",
+    content: "something usual",
+    id: 2,
+    icon: WorkIcon,
+  },
+  {
+    date: "3/2/2024",
+    title: "Heading",
+    content: "something usual",
+    id: 3,
+    icon: SchoolIcon,
+  },
+  {
+    date: "3/2/2024",
+    title: "Heading",
+    content: "something usual",
+    id: 4,
+    icon: FavoriteIcon,
+  },
+  {
+    date: "3/2/2024",
+    title: "Heading",
+    content: "something usual",
+    id: 5,
+    icon: SchoolIcon,
+  },
+  {
+    date: "3/2/2024",
+    title: "Heading",
+    content: "something usual",
+    id: 6,
+    icon: FavoriteIcon,
+  },
+];

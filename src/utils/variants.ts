@@ -34,8 +34,10 @@ export const staggerParent = {
   },
   show: {
     opacity: 1,
+
     transition: {
-      staggerChildren: 0.08,
+      staggerChildren: 0.1,
+
       // Time between each child's animation
     },
   },
@@ -52,6 +54,20 @@ export const staggerChild = {
     scale: 1,
     transition: {
       duration: 0.5, // Duration for each child's animation
+    },
+  },
+};
+
+export const staggerChildScale = {
+  hidden: {
+    opacity: 0,
+    scale: 0,
+  },
+  show: {
+    opacity: 1,
+    scale: [1.5, 1], // Scale to 1.5 then back to 1
+    transition: {
+      duration: 1, // Total animation duration
     },
   },
 };
