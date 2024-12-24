@@ -11,28 +11,21 @@ export default function Timeline() {
       return (
         <>
           <VerticalTimelineElement
+            key={item.id}
             contentStyle={{ color: "#000", marginBottom: "5rem" }}
             contentArrowStyle={{ borderRight: "7px solid #fff" }}
-            date="2011 - 2014"
+            date={item.date}
             iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
             icon={<item.icon />}
           >
-            <h3 className="vertical-timeline-element-title">
-              Creative Director
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-            <p>
-              Creative Direction, User Experience, Visual Design, Project
-              Management, Team Leading Creative Direction, User Experience,
-              Visual Design, Project Management, Team Leading Creative
-              Direction, User Experience, Visual Design, Project Management,
-              Team Leading
-            </p>
+            <h3 className="text-lg ">{item.title}</h3>
+            <h4 className="vertical-timeline-element-subtitle">{item.sub}</h4>
+            <p className="text-base font-normal">{item.content}</p>
           </VerticalTimelineElement>
 
           {item.star && (
             <VerticalTimelineElement
-              icon={<item.icon />}
+              icon={<item.starIcon />}
               iconStyle={{ background: "green", color: "#fff" }}
             />
           )}
@@ -45,7 +38,9 @@ export default function Timeline() {
 
   return (
     <div className="bg-slate-100 my-10 ">
-      <VerticalTimeline lineColor="#fff">{timeLineElement()}</VerticalTimeline>
+      <VerticalTimeline lineColor="#fff" animate={true}>
+        {timeLineElement()}
+      </VerticalTimeline>
     </div>
   );
 }

@@ -1,7 +1,6 @@
 import StarIcon from "@mui/icons-material/Star";
 
 import { motion } from "framer-motion";
-import { staggerChildScale, staggerParent } from "../../utils/variants";
 import { testimonials, TestimonialType } from "../../constant/data";
 import { numericDate } from "../../utils/util";
 
@@ -24,9 +23,23 @@ export function TestimonialCard({ item }: Props) {
         <p>{item.text}</p>
       </div>
 
-      <motion.div variants={staggerParent} initial="hidden" whileInView="show">
+      <motion.div
+        variants={{
+          show: { transition: { staggerChildren: 0.1 } },
+        }}
+        viewport={{ once: true }}
+        initial="hidden"
+        whileInView="show"
+      >
         {Array.from({ length: 5 }).map((_, index) => (
-          <motion.span key={index} variants={staggerChildScale}>
+          <motion.span
+            key={index}
+            variants={{
+              hidden: { opacity: 0, scale: 0.5 },
+              show: { opacity: 1, scale: [0.5, 1.2, 1] },
+            }}
+            transition={{ type: "spring" }}
+          >
             <StarIcon sx={{ color: "yellow" }} />
           </motion.span>
         ))}

@@ -36,7 +36,7 @@ function Counter({
   }, [isInView, start, end, duration]);
 
   return (
-    <motion.span className="justify-self-center font-semibold text-3xl">
+    <motion.span className="justify-self-center font-semibold text-[clamp(1.5rem,1.3vw,3rem)]">
       {count}
     </motion.span>
   );
@@ -89,15 +89,29 @@ export default function HomeEvaluate() {
               ref={ref}
             >
               <motion.div className="grid">
-                <Counter end={20000} duration={2000} isInView={isInView} />{" "}
-                <p>Total clients</p>
+                <div className="flex items-center  justify-center gap-2">
+                  <Counter end={20000} duration={2000} isInView={isInView} />
+
+                  <span className="text-2xl">+</span>
+                </div>
+
+                <p>
+                  Total clients <span className=""></span>
+                </p>
               </motion.div>
               <motion.div className="grid">
-                <Counter end={15} duration={1500} isInView={isInView} />
+                <div className="flex items-center justify-center gap-2">
+                  <Counter end={15} duration={1500} isInView={isInView} />
+                  <span className="text-2xl">+</span>
+                </div>
+
                 <p>Experience</p>
               </motion.div>
               <motion.div className="grid">
-                <Counter end={20} duration={1500} isInView={isInView} />
+                <div className="flex justify-center items-center gap-2">
+                  <Counter end={20} duration={1500} isInView={isInView} />
+                  <span className="text-2xl">+</span>
+                </div>
                 <p>Partners</p>
               </motion.div>
             </div>

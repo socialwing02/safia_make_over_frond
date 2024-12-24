@@ -25,9 +25,6 @@ export const fadeIn = (direction: string, delay: number) => {
   };
 };
 
-// utils/variants.js
-
-// Parent variant for staggering children
 export const staggerParent = {
   hidden: {
     opacity: 0,
@@ -35,14 +32,11 @@ export const staggerParent = {
   show: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.1,
-
-      // Time between each child's animation
+      staggerChildren: 0.2,
     },
   },
 };
 
-// Child variant for individual animations
 export const staggerChild = {
   hidden: {
     opacity: 0,
@@ -52,7 +46,7 @@ export const staggerChild = {
     opacity: 1,
     scale: 1,
     transition: {
-      duration: 0.5,
+      duration: 0.4,
     },
   },
 };

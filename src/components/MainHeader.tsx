@@ -6,8 +6,8 @@ import HamburgMenu from "./HamburgMenu";
 export default function MainHeader() {
   return (
     <>
-      <header className="bg-white flex justify-between p-8 border items-center">
-        <img src="/log.png" alt="" />
+      <header className="bg-white flex justify-between px-8  border items-center sticky top-0 z-[150]">
+        <img src="/safia-logo.png" alt="" className="w-[100px]" />
 
         <div className="hidden sm:inline-block">
           <nav className="flex items-center gap-10">

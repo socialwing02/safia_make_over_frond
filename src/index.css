@@ -452,3 +452,12 @@ input[type="number"]::-webkit-outer-spin-button {
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
+.service-hero {
+  min-height: 100vh;
+  background-image: url("./assets/Service/service-image-bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

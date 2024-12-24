@@ -1,14 +1,21 @@
+import { motion } from "framer-motion";
 import image2 from "../../assets/Testimonal/client2.webp";
+import { fadeIn } from "../../utils/variants";
 
-const Service = () => {
+const MakeupInfoSection = () => {
   return (
     <div>
       <div className="flex flex-col lg:flex-row py-5 lg:w-[min(1100px,90vw)] items-center mx-auto">
-        <div className="text-center lg:text-left lg:w-1/2 p-4 order-2 lg:order-none">
+        <motion.div
+          className="text-center lg:text-left lg:w-1/2 p-4 order-2 lg:order-none"
+          variants={fadeIn("left", 0.3)}
+          initial="hidden"
+          whileInView="show"
+        >
           <h1 className="text-3xl font-playball text-center  text-yellow-600   font-bold mb-8">
             How to know if HD Makeup is the right choice for you?
           </h1>
-          <p className="mb-8">
+          <p className="mb-8 ">
             If you want to achieve a flawless look yet maintain more of a
             natural appearance, then HD makeup should be your go-to. It is
             suitable for all skin types and will prevent your makeup from
@@ -19,7 +26,7 @@ const Service = () => {
           <h2 className="text-3xl font-playball text-center  text-yellow-600   font-bold mb-8">
             Is HD Makeup better than Airbrush Makeup?
           </h2>
-          <p className="mb-4">
+          <p className="mb-4 ">
             Safiya, the heart and soul behind Safiya’s Makeover, is a seasoned
             makeup artist with a passion for creating flawless bridal looks.
             With a keen eye for detail and an innate understanding of beauty,
@@ -29,17 +36,22 @@ const Service = () => {
             Today, she continues to elevate the bridal makeup experience,
             ensuring each client’s vision is beautifully realized.
           </p>
-        </div>
-        <div className="lg:w-1/2 p-4 order-1 lg:order-none">
+        </motion.div>
+        <motion.div
+          className="lg:w-1/2 p-4 order-1 lg:order-none"
+          variants={fadeIn("right", 0.3)}
+          initial="hidden"
+          whileInView="show"
+        >
           <img
             src={image2}
             alt="Safiya's Photo"
             className="w-full h-auto rounded-2xl shadow-lg"
           />
-        </div>
+        </motion.div>
       </div>
     </div>
   );
 };
 
-export default Service;
+export default MakeupInfoSection;

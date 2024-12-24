@@ -1,5 +1,6 @@
 import Card from "./Card";
 import { cardData } from "../constant/data";
+import { motion } from "framer-motion";
 
 export default function ServiceList() {
   return (
@@ -9,11 +10,20 @@ export default function ServiceList() {
       </h2>
 
       <div className="flex justify-center">
-        <div className="card-list">
+        <motion.div
+          className="card-list"
+          variants={{
+            show: {
+              transition: { staggerChildren: 0.09 },
+            },
+          }}
+          initial="hidden"
+          whileInView="show"
+        >
           {cardData.map((item, index) => (
             <Card item={item} key={index} />
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

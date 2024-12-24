@@ -1,6 +1,13 @@
+import { motion } from "framer-motion";
+import { fadeIn } from "../utils/variants";
+
 export default function HeroContent() {
   return (
-    <div>
+    <motion.div
+      variants={fadeIn("left", 0.3)}
+      initial="hidden"
+      whileInView="show"
+    >
       <h1 className="font-playball text-yellow-700 m-8 text-center text-[clamp(2rem,3vw,5rem)]">
         Professional Bridal Makeup Artist in Pondicherry
       </h1>
@@ -27,6 +34,6 @@ export default function HeroContent() {
       <h1 className="m-8 text-center font-bold text-3xl text-gray-800">
         OUR MAKEUP SERVICES INCLUDE
       </h1>
-    </div>
+    </motion.div>
   );
 }
